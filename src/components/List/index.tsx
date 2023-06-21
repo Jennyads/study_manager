@@ -1,5 +1,6 @@
 import React from  'react';
 import style from './Lista.module.scss';
+import Item from './Item';
 
 function List(){
     const tasks = [{
@@ -21,14 +22,14 @@ function List(){
             <ul>
                 {/* percorrer o array e retornar um html */}
                 {tasks.map((item, index) => (
-                    <li key={index} className={style.item}>
-                        <h3> 
-                            {item.task}
-                        </h3>
-                        <span>
-                            {item.time}
-                        </span>
-                    </li>
+                    <Item
+                    key={index}
+                    {...item} //item vem de um objeto, assim desestrutura e usa todos os atributos, conseguimos utilizar todos os atributos que existem dentro daquele objeto como prop para esse componente. Isso é muito bom, porque se tiver muitas propriedades dentro daquele objeto, não precisamos ficar escrevendo uma por uma. Basta desestruturar dentro do componente e ele já consegue nos mostrar tudo.
+
+                    // task={item.task}
+                    // time={item.task}
+                    />
+                    
                 ))}
             </ul>
 
