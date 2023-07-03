@@ -19,9 +19,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "downlevelIteration": true,
     "plugins": [{"name": "typescript-plugin-css-modules"}]
   },
   "include": [
     "src"
-, "src/components/Button"  ]
+, "src/components/Botao"  ]
 }
