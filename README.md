@@ -1,4 +1,4 @@
-<h3>Alura React: escrevendo com typescript e construindo uma aplicação de gerenciamento de estudos</h3>
+<h3>React: escrevendo com typescript e construindo uma aplicação de gerenciamento de estudos</h3>
 
  O comando create-react-app projeto --template typescript cria o projeto com a linguagem TypeScript, o comando cd projeto entra na pasta desse projeto criado e o comando npm start roda o projeto.
 ```
